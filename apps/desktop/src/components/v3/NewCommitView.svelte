@@ -187,11 +187,7 @@
 			return;
 		}
 
-		try {
-			await createCommit(message);
-		} catch (err: unknown) {
-			showError('Failed to commit', err);
-		}
+		await createCommit(message);
 	}
 
 	function handleMessageUpdate(title?: string, description?: string) {
